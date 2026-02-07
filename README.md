@@ -53,7 +53,7 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the repository** (if you haven't already):
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/dikshamirgal2005-bit/GreenVolt.git 
     cd e-waste
     ```
 
