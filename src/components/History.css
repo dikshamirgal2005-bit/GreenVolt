@@ -1,0 +1,229 @@
+.history {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e8f5e9;
+}
+
+.history h2 {
+    font-size: 28px;
+    color: #1e8449;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.history-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e8f5e9;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.history-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    border-color: #1e8449;
+}
+
+.history-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #f1f8f3;
+}
+
+.history-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.history-card:hover .history-image img {
+    transform: scale(1.05);
+}
+
+.history-details {
+    padding: 20px;
+}
+
+.history-details h3 {
+    color: #1e8449;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.history-info p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-info strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-pending {
+    background: #f39c12;
+}
+
+.status-approved {
+    background: #2e7d32;
+}
+
+.status-rejected {
+    background: #c62828;
+}
+
+.history-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 13px;
+}
+
+.edit-btn {
+    background: #e8f5e9;
+    color: #1e8449;
+    border: 1px solid #c8e6c9;
+}
+
+.edit-btn:hover {
+    background: #1e8449;
+    color: white;
+}
+
+.delete-btn {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.delete-btn:hover {
+    background: #c62828;
+    color: white;
+}
+
+.edit-form {
+    background: #f8fcf9;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #c8e6c9;
+    margin-top: 15px;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: all 0.3s;
+}
+
+.edit-form input:focus {
+    outline: none;
+    border-color: #1e8449;
+    box-shadow: 0 0 0 2px rgba(30, 132, 73, 0.1);
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.save-btn {
+    background: #1e8449;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #145a32;
+}
+
+.cancel-btn {
+    background: #eceff1;
+    color: #546e7a;
+}
+
+.cancel-btn:hover {
+    background: #cfd8dc;
+}
+
+.no-history {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.no-history p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.no-history-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+    opacity: 0.3;
+    color: #1e8449;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .history {
+        padding: 25px 20px;
+    }
+
+    .history h2 {
+        font-size: 24px;
+    }
+
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+}
